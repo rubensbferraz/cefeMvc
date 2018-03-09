@@ -1,0 +1,11 @@
+C:\site\cefeBackEnd\CefeMvc\CefeMvc\bin\Debug\netcoreapp2.0\CefeMvc.deps.json
+C:\site\cefeBackEnd\CefeMvc\CefeMvc\bin\Debug\netcoreapp2.0\CefeMvc.runtimeconfig.json
+C:\site\cefeBackEnd\CefeMvc\CefeMvc\bin\Debug\netcoreapp2.0\CefeMvc.runtimeconfig.dev.json
+C:\site\cefeBackEnd\CefeMvc\CefeMvc\bin\Debug\netcoreapp2.0\CefeMvc.dll
+C:\site\cefeBackEnd\CefeMvc\CefeMvc\bin\Debug\netcoreapp2.0\CefeMvc.pdb
+C:\site\cefeBackEnd\CefeMvc\CefeMvc\obj\Debug\netcoreapp2.0\CefeMvc.csprojResolveAssemblyReference.cache
+C:\site\cefeBackEnd\CefeMvc\CefeMvc\obj\Debug\netcoreapp2.0\CefeMvc.csproj.CoreCompileInputs.cache
+C:\site\cefeBackEnd\CefeMvc\CefeMvc\obj\Debug\netcoreapp2.0\CefeMvc.AssemblyInfoInputs.cache
+C:\site\cefeBackEnd\CefeMvc\CefeMvc\obj\Debug\netcoreapp2.0\CefeMvc.AssemblyInfo.cs
+C:\site\cefeBackEnd\CefeMvc\CefeMvc\obj\Debug\netcoreapp2.0\CefeMvc.dll
+C:\site\cefeBackEnd\CefeMvc\CefeMvc\obj\Debug\netcoreapp2.0\CefeMvc.pdb

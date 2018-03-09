@@ -1,0 +1,110 @@
+
+/*Configurando Pagina principal para componentes Flex - Colunas*/
+a{
+    text-decoration: none;
+}
+/*Configurando pagina principal para componentes Flex - linha*/
+#menu > *{
+  display: flex;
+  flex-direction: row;
+}
+/* Configurando os filhos dos componentes com comportamento Flex*/
+#menu > *{
+  flex: 1 1 auto;
+}
+/*#header{
+  height: 120px;
+  background-image: url(../images/cabecalho.jpg);
+  background-repeat: no-repeat;
+}*/
+/*Inicio Configurando o Menu*/
+#menu{
+  display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	height: 120px;
+}
+#menu{
+	font-size: 12px;
+	color: #FFFFFF;
+}
+#menu ul{
+	margin: 1px 0px;
+	list-style-type: none;
+	z-index: 100;
+}
+#menu ul.sub1{
+	list-style-type: none;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+#menu li{
+	list-style-type: none;
+	width: 145px;
+  padding: 10px 0;
+	text-align: center;
+	position: relative;
+	display: block;
+
+}
+#menu a{
+	text-decoration: none;
+	display: block;
+  padding: 2px 0;
+	width: 100%;
+	height: 24px;
+	text-align: center;
+	background-color: #FFFFFF;
+	border: 1px solid #ccc000;
+	border-radius: 3px;
+	font: 14px;
+	color: #000;
+}
+#menu .sub1 li{
+	padding: 0px 0px;
+}
+#menu li:hover > a{
+	background-color: #FFFFFF;
+}
+#menu li:hover a:hover{
+	background-color: #ffd700;
+}
+#menu ul.sub1{
+	display: none;
+	position: absolute;
+	top: 18px;
+	left: 0px;
+}
+#menu li:hover .sub1{
+	display: block;
+}
+#menu .sub1 li:hover{
+	display: block;
+}
+
+.logo{
+	display: block;
+	position: absolute;
+	margin-top: -85px;
+	margin-left: -100px;
+}
+#textologoCEFE{
+	display: block;
+	position: relative;
+	cursor: pointer;
+	margin-top: 24px;
+	color: #000000;
+	background-color: transparent;
+}
+#logoCEFE{
+	display: block;
+	position: relative;
+	cursor: pointer;
+	background-color: transparent;
+	width: 22%;
+	height: 0%;
+
+}
+.container{
+	margin-top: 80px;
+}
+
