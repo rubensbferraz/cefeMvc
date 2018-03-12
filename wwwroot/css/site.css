@@ -3,24 +3,17 @@
     font-family: 'Verdana', sans-serif;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    margin: auto;
-    height: 20px;
+    display: block;
+    position: relative;
 }
-
 /* Hide/rearrange for smaller screens */
-
 #custom_carousel .item {
     color:#000;
     background-color: transparent;
     
 }
-.carousel-inner{
-    height: 252px;
-    margin-top: 72px;
-}
+
 #custom_carousel .controls{
     overflow-x: auto;
     overflow-y: hidden;
@@ -48,7 +41,6 @@
     font-weight:bold
 }
 .navbar{
-    width: 98%;
     margin: auto;
 }
 .navbar-inverse {
@@ -68,10 +60,8 @@
     position: fixed;
     right: 0;
     left: 0;
-    z-index: 1030;
+
 }
-.container-fluid {
-    margin-right: auto;
-    margin-left: auto;
-}
+
+
 

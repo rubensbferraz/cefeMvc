@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
         <link rel="stylesheet" href="~/css/styleMenu.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -17,74 +19,122 @@
     </environment>
 </head>
 <body>
-    <div class="container body-content">
-              <nav id="menu" class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="logo">
-                    <img src="./../../images/CEFELogo.png" asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand" id="logoCEFE" />
-                    <span asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand" id="textologoCEFE" >CEFE</br>Casa Espírita Fratenidade Emanuel</span>
+    <div class="container body-content"><!-- inicio container -->
+        <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="logo">
+                        <img src="./../../images/CEFELogo.png" asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand" id="logoCEFE" />
+                        <span asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand" id="textologoCEFE" >CEFE</br>Casa Espírita Fratenidade Emanuel</span>
+                    </div>
                 </div>
-                
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">HOME</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="#">QUEM SOMOS</a>
-                        <ul class="sub1">
-                        <li><a asp-area="" asp-controller="Home" asp-action="pginternas/quem_somos/nossa_historia.html">Nossa História</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="pginternas/quem_somos/objetivos.html">Objetivo</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="pginternas/quem_somos/estatuto.html">Estatuto</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="pginternas/quem_somos/Diretoria.html">Diretoria</a></li>
+        </nav>
+    </div><!-- inicio container -->
+    <!--Inicio do Menu container -->
+    <div class="menuContainer">
+	<!--Primeiro Botão (CASA ESPÍRITA)-->
+        <ul class="menu clearfix" role="menu" aria-labelledby="dLabel">
+            <li><a asp-area="" asp-controller="Home" asp-action="Index" tabindex="-1">CASA ESPÍRITA</a>
+                <!-- Nivel 1 -->
+                <!-- Primeiro botão -->
+                <ul class="sub-menu clearfix">
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Quem Somos</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Administração</a>
+                        <!-- Primeiro botão -->
+                        <!-- Primeiro botão -->
+                        <ul class="sub-menu clearfix">
+                            <li><a asp-area="" asp-controller="Home" asp-action="#">Gestão atual</a></li>
+                            <li><a asp-area="" asp-controller="Home" asp-action="#">Gestão anterior</a></li>
                         </ul>
                     </li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="#">CENTRO ESPÍRITA</a>
-                        <ul class="sub1">
-                        <li><a asp-area="" asp-controller="Home" asp-action="pginternas/quem_somos/construcao.php">Palestras</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="#">Livraria</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="#">Biblioteca</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="pginternas/administracao/admin.html">Adminitração</a></li>
-                        </ul>
-                    </li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="#">ATIVIDADES</a>
-                        <ul class="sub1">
-                        <li><a asp-area="" asp-controller="Home" asp-action="#">Eventos</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="#">Tratamentos</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="pginternas/sosdepressao/sosdepressao_conhecendo.html">SOS Depressão</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="pginternas/cursos/cursosnacefe.html">Cursos</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="#">Auta de Souza</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="#">Chico Xavier</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="pginternas/coral/painel.php">Coral CEFE</a></li>
-                        </ul>
-                    </li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="#">COLABORADOR</a>
-                    <ul class="sub1">
-                        <li><a asp-area="" asp-controller="Home" asp-action="pginternas/quem_somos/construcao.php">Como Ajudar</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="pginternas/quem_somos/construcao.php">Doações</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="pginternas/quem_somos/construcao.php">Associar-se</a></li>
-                    </ul>
-                    </li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="#">CONTATO</a>
-                        <ul class="sub1">
-                        <li><a asp-area="" asp-controller="Home" asp-action="pginternas/quem_somos/construcao.php">Fale Conosco</a></li>
-                        </ul>
-                    </li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Qume é quem</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2018 - CefeMvc</p>
-        </footer>
+            </li>
+        </ul>
+        <!--Segundo Botão (ESTUDO)-->
+        <ul class="menu clearfix" role="menu" aria-labelledby="dLabel">
+            <li><a asp-area="" asp-controller="Home" asp-action="Index" tabindex="-1">ESTUDO</a>
+                <ul class="sub-menu clearfix">
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Evangelização</a>
+                        <ul class="sub-menu clearfix">
+                            <li><a asp-area="" asp-controller="Home" asp-action="#">Infância</a></li>
+                            <li><a asp-area="" asp-controller="Home" asp-action="#">Jovens</a></li>
+                            <li><a asp-area="" asp-controller="Home" asp-action="#">Adulto</a></li>
+                        </ul>                                
+                    </li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Cursos</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Oficinas</a></li>
+                </ul>
+            </li>
+        </ul>                    
+        <!--Terceiro Botão (PRÁDICA)-->
+        <ul class="menu clearfix" role="menu" aria-labelledby="dLabel">
+            <li><a asp-area="" asp-controller="Home" asp-action="Index" tabindex="-1">PRÁTICA</a>
+                <ul class="sub-menu clearfix">
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Campanhas</a>
+                        <ul class="sub-menu clearfix">
+                            <li><a asp-area="" asp-controller="Home" asp-action="#">Fratenidade Auta de Souza</a></li>
+                            <li><a asp-area="" asp-controller="Home" asp-action="#">Esclacimento Chico Xavier</a></li>
+                            <li><a asp-area="" asp-controller="Home" asp-action="#">Jesus no Lar</a></li>
+                        </ul>                                
+                    </li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Mãos Limpas</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Atendimento</a>
+                        <ul class="sub-menu clearfix">
+                            <li><a asp-area="" asp-controller="Home" asp-action="#">Gestantes</a></li>
+                            <li><a asp-area="" asp-controller="Home" asp-action="#">Assistidos</a></li>
+                        </ul>                                  
+                    </li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Grupo Mediúnico</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Passes</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Bazar</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Eventos</a></li>
+                </ul>
+            </li>
+        </ul>                     
+        <!--Quarto Botão (ARTE)-->
+        <ul class="menu clearfix" role="menu" aria-labelledby="dLabel">
+            <li><a asp-area="" asp-controller="Home" asp-action="Index" tabindex="-1">ARTE</a>
+                <ul class="sub-menu clearfix">
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Coral</a>
+                        <ul class="sub-menu clearfix">
+                            <li><a asp-area="" asp-controller="Home" asp-action="#">Infantil Amigos de Meimei</a></li>
+                            <li><a asp-area="" asp-controller="Home" asp-action="#">Espírita Fraternidade Emmanuel</a></li>
+                        </ul>                                
+                    </li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Teatro Mesas Girantes</a></li>
+                </ul>
+            </li>
+        </ul>                     
+        <!--Quinto Botão (CONTATO)-->
+        <ul class="menu clearfix" role="menu" aria-labelledby="dLabel">
+            <li><a asp-area="" asp-controller="Home" asp-action="Index" tabindex="-1">CONTATOS</a>
+                <ul class="sub-menu clearfix">
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Rede Sociais</a>
+                        <ul class="sub-menu clearfix">
+                            <li><a asp-area="" asp-controller="Home" asp-action="#">Facebook</a></li>
+                            <li><a asp-area="" asp-controller="Home" asp-action="#">Twitter</a></li>
+                            <li><a asp-area="" asp-controller="Home" asp-action="#">Instagram</a></li>
+                        </ul>                                
+                    </li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="#">Maiores Informações</a></li>
+                </ul>
+            </li>
+        </ul> 
     </div>
+    <!--Fim do Menu container -->
+    @RenderBody()
+    <hr />
+    <footer>
+        <p>&copy; 2018 - CefeMvc</p>
+    </footer>
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
